@@ -36,3 +36,5 @@ psql -h 127.1 -U postgres -p5432 -f 'example/init-single.sql'
 ```
 
 4. В файлах [query.sql](example/query.sql) и [diagostic.sql](exapmle/diagostic.sql) набор тестовых запросов для изучения.
+
+5.[*] В файле [HA-CITUS.md](HA-CITUS.md) последовательность шагов для запуска кластера CitusDB в режиме HA.
