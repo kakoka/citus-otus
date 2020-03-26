@@ -18,7 +18,7 @@ docker-compose docker-compose scale worker=2
 2. Скрипт создания базы данных
 
 ```bash
-psql -h 127.1 -U postgres -p5433 -f 'init-mt.sql'
+psql -h 127.1 -U postgres -p5433 -f 'example/init-mt.sql'
 ```
 
 создаст в базе данных postgres схему БД и заполнит ее тестовыми данными.
@@ -32,7 +32,7 @@ docker run -d --name postgres -p "5432:5432" -e POSTGRES_PASSWORD="" -e POSTGRES
 и запустить скрипт, который создаст схему БД
 
 ```bash
-psql -h 127.1 -U postgres -p5432 -f 'init-single.sql'
+psql -h 127.1 -U postgres -p5432 -f 'example/init-single.sql'
 ```
 
 4. В файлах [query.sql](example/query.sql) и [diagostic.sql](exapmle/diagostic.sql) набор тестовых запросов для изучения.
