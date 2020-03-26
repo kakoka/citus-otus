@@ -35,4 +35,4 @@ docker run -d --name postgres -p "5432:5432" -e POSTGRES_PASSWORD="" -e POSTGRES
 psql -h 127.1 -U postgres -p5432 -f 'init-single.sql'
 ```
 
-4. В файлах (query.sql)[query.sql] и (diagostic.sql)[diagostic.sql] набор тестовых запросов для изучения.
+4. В файлах [query.sql](example/query.sql) и [diagostic.sql](exapmle/diagostic.sql) набор тестовых запросов для изучения.
